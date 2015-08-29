@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Whadup by mrsmn</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Whadup</h1>
+        <p>A python wrapper around status.github.com</p>
+
+        <p class="view"><a href="https://github.com/mrsmn/whadup">View the Project on GitHub <small>mrsmn/whadup</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/mrsmn/whadup/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mrsmn/whadup/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mrsmn/whadup">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><img src="http://i.imgur.com/GhRFTwE.jpg" height="250" alt="whadup" title="whadup"></p>
+
+<p><a href="https://pypi.python.org/pypi/whadup/"><img src="http://img.shields.io/pypi/v/whadup.svg" alt="PyPi Version"></a>   <a href="https://pypi.python.org/pypi/whadup/"><img src="http://img.shields.io/pypi/dm/whadup.svg" alt="Downloads"></a>
+<a href="https://landscape.io/github/mrsmn/whadup/master"><img src="https://landscape.io/github/mrsmn/whadup/master/landscape.svg" alt="Code Health"></a></p>
+
+<p><strong>whadup</strong> is an APACHE licensed library written in Python providing an easy to use wrapper around <a href="https://status.github.com">https://status.github.com</a>.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation:</h2>
+
+<p>From source use</p>
+
+<pre><code>    $ python setup.py install
+</code></pre>
+
+<p>or install from PyPi</p>
+
+<pre><code>    $ pip install whadup
+</code></pre>
+
+<h2>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation:</h2>
+
+<ul>
+<li>GET /api/status.json</li>
+</ul>
+
+<pre><code>&gt;&gt;&gt; from whadup import GithubStatus
+&gt;&gt;&gt; gh = GithubStatus()
+&gt;&gt;&gt; gh.status()
+{"status":"good","last_updated":"2015-08-29T15:59:44Z"}
+</code></pre>
+
+<ul>
+<li>GET /api/last-message.json</li>
+</ul>
+
+<pre><code>&gt;&gt;&gt; gh.lastmessage()
+{"status":"good","body":"Everything operating normally.","created_on":"2015-08-25T13:49:29Z"}
+</code></pre>
+
+<ul>
+<li>GET /api/messages.json</li>
+</ul>
+
+<pre><code>&gt;&gt;&gt; gh.messages()
+[
+    {
+        "status": "good", 
+        "body": "Everything operating normally.", 
+        "created_on": "2015-08-25T13:49:29Z"
+    }, 
+    {
+        "status": "good", 
+        "body": "Service has been restored. We continue to monitor the situation closely.", 
+        "created_on": "2015-08-25T12:52:30Z"
+    }, 
+    {
+        "status": "minor", 
+        "body": "We are restoring service as we mitigate a DDoS attack. Response times may be slower while this work continues.", 
+        "created_on": "2015-08-25T12:08:21Z"
+    }, 
+    {
+        "status": "minor", 
+        "body": "We are restoring service as we mitigate a DDoS attack.", 
+        "created_on": "2015-08-25T11:27:21Z"
+    }, 
+    {
+        "status": "major", 
+        "body": "We are continuing to work to mitigate an ongoing DDoS attack.", 
+        "created_on": "2015-08-25T11:06:09Z"
+    }, 
+    {
+        "status": "major", 
+        "body": "The connectivity problems have been identified as a DDoS attack. We're working to mitigate now.", 
+        "created_on": "2015-08-25T10:38:32Z"
+    }, 
+    {
+        "status": "minor", 
+        "body": "We're continuing to diagnose reports of connectivity problems.", 
+        "created_on": "2015-08-25T10:07:20Z"
+    }, 
+    {
+        "status": "minor", 
+        "body": "We are investigating reports of connectivity problems.", 
+        "created_on": "2015-08-25T09:39:12Z"
+    }, 
+    {
+        "status": "good", 
+        "body": "Everything operating normally.", 
+        "created_on": "2015-08-24T16:08:32Z"
+    }, 
+    {
+        "status": "minor", 
+        "body": "We're investigating a brief capacity overload. Systems are recovering.", 
+        "created_on": "2015-08-24T15:58:07Z"
+    }, 
+    {
+        "status": "minor", 
+        "body": "Minor service outage.", 
+        "created_on": "2015-08-24T15:47:02Z"
+    }
+]
+</code></pre>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License:</h2>
+
+<pre><code>    Apache v2.0 License
+    Copyright 2015 Martin Simon
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+</code></pre>
+
+<h2>
+<a id="buy-me-a-coffee" class="anchor" href="#buy-me-a-coffee" aria-hidden="true"><span class="octicon octicon-link"></span></a>Buy me a coffee?</h2>
+
+<p>If you feel like buying me a coffee (or a beer?), donations are welcome:</p>
+
+<pre><code>WDC : WbcWJzVD8yXt3yLnnkCZtwQo4YgSUdELkj
+HBN : F2Zs4igv8r4oJJzh4sh4bGmeqoUxLQHPki
+DOGE: DRBkryyau5CMxpBzVmrBAjK6dVdMZSBsuS
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/mrsmn">mrsmn</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
