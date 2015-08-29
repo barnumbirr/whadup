@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/mrsmn/whadup/master/doc/whadup.jpg" alt="whadup" title="whadup">
+<img src="http://i.imgur.com/GhRFTwE.jpg" alt="whadup" title="whadup">
 
 [![PyPi Version](http://img.shields.io/pypi/v/whadup.svg)](https://pypi.python.org/pypi/whadup/)   [![Downloads](http://img.shields.io/pypi/dm/whadup.svg)](https://pypi.python.org/pypi/whadup/)
 [![Code Health](https://landscape.io/github/mrsmn/whadup/master/landscape.svg)](https://landscape.io/github/mrsmn/whadup/master)
