@@ -17,7 +17,7 @@ or install from PyPi
 
 ## Documentation:
 
-- GET /api/status.json
+- **GET /api/status.json**
 ```
 >>> from whadup import GithubStatus
 >>> gh = GithubStatus()
@@ -25,13 +25,13 @@ or install from PyPi
 {"status":"good","last_updated":"2015-08-29T15:59:44Z"}
 ```
 
-- GET /api/last-message.json
+- **GET /api/last-message.json**
 ```
 >>> gh.lastmessage()
 {"status":"good","body":"Everything operating normally.","created_on":"2015-08-25T13:49:29Z"}
 ```
 
-- GET /api/messages.json
+- **GET /api/messages.json**
 ```
 >>> gh.messages()
 [
