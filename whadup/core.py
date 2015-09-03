@@ -13,6 +13,8 @@ class GithubStatus(object):
 		self.base_url = base_url
 		self.opener = urllib2.build_opener()
 		self.opener.addheaders.append(('Content-Type', 'application/json'))
+		self.opener.addheaders.append(('User-agent', 'whadup - python wrapper \
+		around status.github.com (github.com/mrsmn/whadup)'))
 
 	def status(self):
 		url = urlparse.urljoin(self.base_url, 'status.json')
