@@ -5,7 +5,7 @@ from distutils.core import setup
 
 setup(
 	name='whadup',
-	version='0.1',
+	version='0.1.1',
 	url='https://github.com/mrsmn/whadup',
 	download_url='https://github.com/mrsmn/whadup/archive/master.zip',
 	author='Martin Simon',
