@@ -9,30 +9,30 @@
 
 From source use
 
-		$ python setup.py install
+	$ python setup.py install
 
 or install from PyPi
 
-		$ pip install whadup
+	$ pip install whadup
 
 ## Documentation:
 
-- **GET /api/status.json**
-```
+- **`GET /api/status.json`**
+```python
 >>> from whadup import GithubStatus
 >>> gh = GithubStatus()
 >>> gh.status()
 {"status":"good","last_updated":"2015-08-29T15:59:44Z"}
 ```
 
-- **GET /api/last-message.json**
-```
+- **`GET /api/last-message.json`**
+```python
 >>> gh.lastmessage()
 {"status":"good","body":"Everything operating normally.","created_on":"2015-08-25T13:49:29Z"}
 ```
 
-- **GET /api/messages.json**
-```
+- **`GET /api/messages.json`**
+```python
 >>> gh.messages()
 [
 	{
@@ -95,7 +95,6 @@ or install from PyPi
 
 ## License:
 
-```
 	Apache v2.0 License
 	Copyright 2015 Martin Simon
 
@@ -111,7 +110,6 @@ or install from PyPi
 	 See the License for the specific language governing permissions and
 	 limitations under the License.
 
-```
 
 ## Buy me a coffee?
 
