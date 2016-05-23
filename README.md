@@ -96,7 +96,7 @@ or install from PyPi
 ## License:
 
 	Apache v2.0 License
-	Copyright 2015 Martin Simon
+	Copyright 2015-2016 Martin Simon
 
 	 Licensed under the Apache License, Version 2.0 (the "License");
 	 you may not use this file except in compliance with the License.
