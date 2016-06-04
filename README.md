@@ -1,7 +1,6 @@
 <img src="https://raw.githubusercontent.com/mrsmn/whadup/master/doc/whadup.jpg" height=250 alt="whadup" title="whadup">
 
-[![PyPi Version](http://img.shields.io/pypi/v/whadup.svg)](https://pypi.python.org/pypi/whadup/)   [![Downloads](http://img.shields.io/pypi/dm/whadup.svg)](https://pypi.python.org/pypi/whadup/)
-[![Code Health](https://landscape.io/github/mrsmn/whadup/master/landscape.svg)](https://landscape.io/github/mrsmn/whadup/master)
+[![PyPi Version](http://img.shields.io/pypi/v/whadup.svg)](https://pypi.python.org/pypi/whadup/)
 
 **whadup** is an APACHE licensed library written in Python providing an easy to use wrapper around https://status.github.com.
 
