@@ -2,7 +2,7 @@
 # <kbd>module</kbd> `whadup`
 
 ```python
-import whadup
+from whadup import GithubStatus
 
 gh = GithubStatus()
 ```
