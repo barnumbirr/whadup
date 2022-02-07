@@ -1,18 +1,30 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from distutils.core import setup
+from setuptools import setup
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setup(
-	name='whadup',
-	version='0.1.2',
-	url='https://github.com/mrsmn/whadup',
-	download_url='https://github.com/mrsmn/whadup/archive/master.zip',
-	author='Martin Simon',
-	author_email='me@martinsimon.me',
-	license='Apache v2.0 License',
-	packages=['whadup'],
-	description='A python wrapper around status.github.com',
-	long_description=file('README.md','r').read(),
-	keywords=['Github', 'Github status', 'API', 'wrapper'],
+    name='whadup',
+    version='0.2.0',
+    author='Martin Simon',
+    author_email='me@martinsimon.me',
+    description='A python wrapper around githubstatus.com.',
+    keywords=['Github', 'Github status', 'API', 'wrapper', 'api'],
+    url='https://github.com/barnumbirr/whadup',
+    download_url='https://github.com/barnumbirr/whadup/archive/refs/heads/master.zip',
+    packages=['whadup'],
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    install_requires=['requests'],
+    classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Topic :: Utilities",
+    ],
 )
